@@ -148,7 +148,7 @@ Group specific tasks into reusable blocks of code.
         return a + b
 
     # Calling functions
-    greet("Jeongtae") # Output: Hello, Jeongtae!
+    greet("John") # Output: Hello, John!
     result = add_numbers(10, 20)
     print(result) # Output: 30
     ```
@@ -173,7 +173,7 @@ Used to add explanations or notes to code. Python interpreters ignore comments.
 * `print()`: Outputs values to the console (screen). Can output multiple values separated by commas.
     ```python
     print("Hello, World!")
-    print("Name:", "Jeongtae", "Age:", 28)
+    print("Name:", "John", "Age:", 24)
     ```
 
 ## 8. Indentation
@@ -190,4 +190,3 @@ Used to add explanations or notes to code. Python interpreters ignore comments.
 
 ---
 
-Review these fundamental concepts quickly, and then let's get back to the practical Pandas exercises. Application is key!
