@@ -3,7 +3,7 @@ layout: post
 title: Python Essential Basics Summary
 date: 2025-04-22 12:50:0 +0000
 categories: [python]
-tags: [python]
+tags: [python, study]
 ---
 # Python Essential Basics Summary (Compressed Review)
 
