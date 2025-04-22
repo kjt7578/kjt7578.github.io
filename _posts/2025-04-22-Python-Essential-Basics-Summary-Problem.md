@@ -1,9 +1,17 @@
 ---
 layout: post
-title: Python Essential Basics Summary Problem
+title: Python Essential Basics Practice Problems Solved
 date: 2025-04-22 12:50:0 +0000
 categories: [python]
-tags: [python, problem]
+tags: [python, problem, basics, practice]
+---
+
+# Python Essential Basics Practice Problems - Solved
+
+Practicing fundamental Python concepts is crucial for building a strong programming foundation, especially before diving into libraries like Pandas for data analysis. I've worked through a set of basic Python practice problems, covering variables, data types, operators, data structures (lists, tuples, dictionaries, sets), control flow (if, for, while), and functions.
+
+Below are the problems and my solutions, displayed directly for easy viewing.
+
 ---
 
 ## 1. Variables, Data Types, and Basic Operators Practice
@@ -17,8 +25,7 @@ Print both.
 
 **Hint:** Use `int`, `float`, `+`, `*`, `-`.
 
-<details>
-<summary>Show Answer</summary>
+**Solution:**
 
 ```python
 # Define individual book prices
@@ -38,26 +45,24 @@ final_price = total_price * (1 - discount_rate)
 # Print results
 print("Total Price:", total_price)
 print("Final Price after discount:", final_price)
-```
 
-</details>
+2. List Practice
+Problem:
 
-## 2. List Practice
+Create a list called weekly_fruits that contains at least 5 different fruits you want to eat this week.
 
-**Problem:**
+Print the first and last fruits from the list.
 
-- Create a list called `weekly_fruits` that contains at least 5 different fruits you want to eat this week.
-- Print the first and last fruits from the list.
-- Add `'mango'` to the end of the list.
-- Change the second fruit in the list to `'kiwi'`.
-- Check if `'apple'` is in the list and print the result.
+Add 'mango' to the end of the list.
 
-**Hint:** Use `[]`, indexing, `append()`, `in`, list reassignment.
+Change the second fruit in the list to 'kiwi'.
 
-<details>
-<summary>Show Answer</summary>
+Check if 'apple' is in the list and print the result.
 
-```python
+Hint: Use [], indexing, append(), in, list reassignment.
+
+Solution:
+
 # Create a list of fruits
 weekly_fruits = ["apple", "banana", "pear", "grape", "pineapple"]
 
@@ -75,23 +80,18 @@ print(weekly_fruits)
 
 # Check if 'apple' is in the list
 print('apple' in weekly_fruits)  # Returns True or False
-```
 
-</details>
+3. Tuple Practice
+Problem:
 
-## 3. Tuple Practice
+Store the latitude and longitude of a city in a tuple called city_location in the format (latitude, longitude).
 
-**Problem:**
+Assign the first element (latitude) and the second element (longitude) of the tuple to separate variables and print them.
 
-- Store the latitude and longitude of a city in a tuple called `city_location` in the format `(latitude, longitude)`.
-- Assign the first element (latitude) and the second element (longitude) of the tuple to separate variables and print them.
+Hint: Use tuple creation (), indexing [], or unpacking a, b = tuple_var.
 
-**Hint:** Use tuple creation `()`, indexing `[]`, or unpacking `a, b = tuple_var`.
+Solution:
 
-<details>
-<summary>Show Answer</summary>
-
-```python
 # Create a tuple to store latitude and longitude
 city_location = (37.5665, 126.9780)  # Example: Seoul
 
@@ -101,26 +101,24 @@ latitude, longitude = city_location
 # Print each variable
 print("Latitude:", latitude)
 print("Longitude:", longitude)
-```
 
-</details>
+4. Dictionary Practice
+Problem:
 
-## 4. Dictionary Practice
+Create a dictionary called study_group where each key is a member's name and the value is another dictionary with their age and role.
 
-**Problem:**
+Change the role of 'Charlie' to 'Treasurer'.
 
-- Create a dictionary called `study_group` where each key is a member's name and the value is another dictionary with their `age` and `role`.
-- Change the role of `'Charlie'` to `'Treasurer'`.
-- Add a new member `'Sarah'` with role `'Member'` and age 31.
-- Print the role of `'Daniel'`.
-- Check whether `'Emily'` exists in the dictionary and print the result.
+Add a new member 'Sarah' with role 'Member' and age 31.
 
-**Hint:** Use `{}`, key-based access and update, adding new key-value pairs, `in` operator.
+Print the role of 'Daniel'.
 
-<details>
-<summary>Show Answer</summary>
+Check whether 'Emily' exists in the dictionary and print the result.
 
-```python
+Hint: Use {}, key-based access and update, adding new key-value pairs, in operator.
+
+Solution:
+
 # Create dictionary of study group members
 study_group = {
     'Charlie': {'age': 25, 'role': 'Member'},
@@ -139,26 +137,24 @@ print(study_group['Daniel']['role'])
 
 # Check if 'Emily' is in the group
 print('Emily' in study_group)  # Returns True or False
-```
 
-</details>
+5. Set Practice
+Problem:
 
-## 5. Set Practice
+You have a list with some duplicate subjects: ['CS', 'Math', 'Physics', 'CS', 'Chemistry', 'Math']
 
-**Problem:**
+Create a set unique_subjects that only contains unique subjects.
 
-- You have a list with some duplicate subjects: `['CS', 'Math', 'Physics', 'CS', 'Chemistry', 'Math']`
-- Create a set `unique_subjects` that only contains unique subjects.
-- Add `'Biology'` to the set.
-- Remove `'Math'` from the set.
-- Print the set and check if `'Physics'` is in the set.
+Add 'Biology' to the set.
 
-**Hint:** Use `set()`, `.add()`, `.remove()`, `in`.
+Remove 'Math' from the set.
 
-<details>
-<summary>Show Answer</summary>
+Print the set and check if 'Physics' is in the set.
 
-```python
+Hint: Use set(), .add(), .remove(), in.
+
+Solution:
+
 # Original list with duplicates
 all_subjects_list = ['CS', 'Math', 'Physics', 'CS', 'Chemistry', 'Math']
 
@@ -176,28 +172,26 @@ print(unique_subjects)
 
 # Check if 'Physics' is in the set
 print('Physics' in unique_subjects)  # Returns True or False
-```
 
-</details>
+6. Conditional Statements Practice
+Problem:
 
-## 6. Conditional Statements Practice
+Store an arbitrary temperature (e.g., 18 degrees Celsius) in a variable called temperature.
 
-**Problem:**
-
-Store an arbitrary temperature (e.g., 18 degrees Celsius) in a variable called `temperature`.  
 Then use conditional statements to print:
 
-- "The weather is hot." if temperature is **25 or higher**
-- "The weather is nice." if it's **between 15 and 24 (inclusive of 15, exclusive of 25)**
-- "The weather is cool." if it's **between 10 and 14 (inclusive of 10, exclusive of 15)**
-- Otherwise, print "The weather is cold."
+"The weather is hot." if temperature is 25 or higher
 
-**Hint:** Use `if`, `elif`, `else`, comparison operators.
+"The weather is nice." if it's between 15 and 24 (inclusive of 15, exclusive of 25)
 
-<details>
-<summary>Show Answer</summary>
+"The weather is cool." if it's between 10 and 14 (inclusive of 10, exclusive of 15)
 
-```python
+Otherwise, print "The weather is cold."
+
+Hint: Use if, elif, else, comparison operators.
+
+Solution:
+
 # Define a temperature value
 temperature = 18
 
@@ -210,24 +204,20 @@ elif 10 <= temperature < 15:
     print("The weather is cool.")
 else:
     print("The weather is cold.")
-```
 
-</details>
+7. For Loop Practice
+Problem:
 
-## 7. For Loop Practice
+You have a list of numbers: numbers = [10, 5, 8, 12, 3]
 
-**Problem:**
+Use a for loop to print each number in the list.
 
-- You have a list of numbers: `numbers = [10, 5, 8, 12, 3]`
-  - Use a `for` loop to print each number in the list.
-- Then, using the `range()` function, write code that prints **only the odd numbers from 1 to 20**.
+Then, using the range() function, write code that prints only the odd numbers from 1 to 20.
 
-**Hint:** Use `for ... in ...`, `range()`, modulo operator `%` with `if`.
+Hint: Use for ... in ..., range(), modulo operator % with if.
 
-<details>
-<summary>Show Answer</summary>
+Solution:
 
-```python
 # List of numbers
 numbers = [10, 5, 8, 12, 3]
 
@@ -239,24 +229,20 @@ for num in numbers:
 for i in range(1, 21):
     if i % 2 != 0:  # Check if the number is odd
         print(i)
-```
 
-</details>
+8. While Loop Practice
+Problem:
 
-## 8. While Loop Practice
+Initialize a variable i to 1.
 
-**Problem:**
+Write a while loop that prints the value of i and increments it by 1 until i is greater than 10.
 
-- Initialize a variable `i` to 1.  
-  Write a `while` loop that prints the value of `i` and increments it by 1 until `i` is greater than 10.
-- Then, write another `while` loop that **repeatedly prompts the user for input** until they type `'exit'`.
+Then, write another while loop that repeatedly prompts the user for input until they type 'exit'.
 
-**Hint:** Use `while` loop, `+=` operator, `input()` function.
+Hint: Use while loop, += operator, input() function.
 
-<details>
-<summary>Show Answer</summary>
+Solution:
 
-```python
 # Part 1: Print numbers from 1 to 10 using a while loop
 i = 1
 while i <= 10:
@@ -270,27 +256,24 @@ while True:
         break  # Exit the loop if user types 'exit'
 
 print("Loop finished because 'exit' was entered.")
-```
 
-</details>
+9. Functions Practice
+Problem:
 
-## 9. Functions Practice
+Write a function called calculate_circle_area that takes a radius as an argument and returns the area of a circle.
 
-**Problem:**
+Use the formula: radius * radius * 3.14.
 
-- Write a function called `calculate_circle_area` that takes a radius as an argument and returns the area of a circle.  
-  Use the formula: `radius * radius * 3.14`.  
-  Call the function with a radius of `5`, store the result in a variable, and print it.
+Call the function with a radius of 5, store the result in a variable, and print it.
 
-- Write another function called `print_list_items` that takes a list as an argument and prints **each item in the list, one item per line**.  
-  Call this function using a list of your favorite colors.
+Write another function called print_list_items that takes a list as an argument and prints each item in the list, one item per line.
 
-**Hint:** Use `def`, parameters, `return`, function call, loop inside the function.
+Call this function using a list of your favorite colors.
 
-<details>
-<summary>Show Answer</summary>
+Hint: Use def, parameters, return, function call, loop inside the function.
 
-```python
+Solution:
+
 # Function to calculate the area of a circle
 def calculate_circle_area(r):
     return r * r * 3.14  # Use π ≈ 3.14
@@ -310,6 +293,3 @@ fav_list = ['yellow', 'orange', 'red']
 
 # Call the function with the color list
 print_list_items(fav_list)
-```
-
-</details>
