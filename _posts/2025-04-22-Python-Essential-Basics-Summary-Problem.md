@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python Essential Basics Summary
+title: Python Essential Basics Summary Problem
 date: 2025-04-22 12:50:0 +0000
 categories: [python]
 tags: [python, problem]
@@ -38,7 +38,9 @@ final_price = total_price * (1 - discount_rate)
 # Print results
 print("Total Price:", total_price)
 print("Final Price after discount:", final_price)
-</details> ```
+```
+
+</details>
 
 ## 2. List Practice
 
@@ -73,7 +75,9 @@ print(weekly_fruits)
 
 # Check if 'apple' is in the list
 print('apple' in weekly_fruits)  # Returns True or False
-</details> ```
+```
+
+</details>
 
 ## 3. Tuple Practice
 
@@ -97,7 +101,9 @@ latitude, longitude = city_location
 # Print each variable
 print("Latitude:", latitude)
 print("Longitude:", longitude)
-</details> ```
+```
+
+</details>
 
 ## 4. Dictionary Practice
 
@@ -125,7 +131,7 @@ study_group = {
 # Update Charlie's role to 'Treasurer'
 study_group['Charlie']['role'] = 'Treasurer'
 
-# Add a new member 'Sarah'
+# Add a new member, Sarah'
 study_group['Sarah'] = {'age': 31, 'role': 'Member'}
 
 # Print Daniel's role
@@ -133,7 +139,9 @@ print(study_group['Daniel']['role'])
 
 # Check if 'Emily' is in the group
 print('Emily' in study_group)  # Returns True or False
-</details> ```
+```
+
+</details>
 
 ## 5. Set Practice
 
@@ -168,7 +176,9 @@ print(unique_subjects)
 
 # Check if 'Physics' is in the set
 print('Physics' in unique_subjects)  # Returns True or False
-</details> ```
+```
+
+</details>
 
 ## 6. Conditional Statements Practice
 
@@ -200,7 +210,9 @@ elif 10 <= temperature < 15:
     print("The weather is cool.")
 else:
     print("The weather is cold.")
-</details> ```
+```
+
+</details>
 
 ## 7. For Loop Practice
 
@@ -227,7 +239,9 @@ for num in numbers:
 for i in range(1, 21):
     if i % 2 != 0:  # Check if the number is odd
         print(i)
-</details> ```
+```
+
+</details>
 
 ## 8. While Loop Practice
 
@@ -256,7 +270,9 @@ while True:
         break  # Exit the loop if user types 'exit'
 
 print("Loop finished because 'exit' was entered.")
-</details> ```
+```
+
+</details>
 
 ## 9. Functions Practice
 
@@ -294,4 +310,6 @@ fav_list = ['yellow', 'orange', 'red']
 
 # Call the function with the color list
 print_list_items(fav_list)
-</details> ```
+```
+
+</details>
